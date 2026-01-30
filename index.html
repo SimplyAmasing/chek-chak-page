@@ -554,17 +554,25 @@
         });
 
         // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-            alert(`شكراً لك ${name}!\n\nتم استلام معلوماتك بنجاح:\n📱 الهاتف: ${phone}\n✉️ البريد: ${email}\n\nسنتواصل معك قريباً!`);
-            
-            this.reset();
-        });
+    const formData = new FormData();
+    formData.append('entry.2012865488', document.getElementById('name').value);
+    formData.append('entry.823606454', document.getElementById('phone').value);
+    formData.append('entry.636659279', document.getElementById('email').value);
+
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSftO7hWMMHcgdbNd-EEB87nH100HWhgv4kZMu-yAwcAVPox1g/formResponse', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+    }).then(() => {
+        alert(' تم إرسال بياناتك بنجاح!\nسنتواصل معك قريباً');
+        document.getElementById('contactForm').reset();
+    }).catch(() => {
+        alert('حدث خطأ أثناء الإرسال، حاول مرة أخرى');
+    });
+});
     </script>
 </body>
 </html>
