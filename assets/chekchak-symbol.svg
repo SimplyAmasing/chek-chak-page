@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260"><defs id="defs3">
+    <linearGradient id="chekchakBrandOrange" x1="0" y1="0" x2="0.95" y2="1">
+      <stop offset="0" stop-color="#FFA722" id="stop1"/>
+      <stop offset=".50" stop-color="#FF8A13" id="stop2"/>
+      <stop offset="1" stop-color="#FF4E27" id="stop3"/>
+    </linearGradient>
+  </defs>
+  <g xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" fill="url(#chekchakBrandOrange)" id="chekchak-symbol" inkscape:groupmode="layer" inkscape:label="01 - Stylized C + Pin (do not change)">
+    <path d="M164 29H264C279 29 288 39 288 52C288 65 278 76 263 76H193C165 76 149 100 149 128C149 159 166 182 194 182H258C276 182 286 192 282 206C279 218 269 228 252 228H179C139 228 115 213 103 186H75C61 186 54 179 54 170C54 159 61 153 75 153H101C115 153 115 140 101 140H28C12 140 6 131 6 121C6 109 14 102 28 102H102C116 102 117 91 102 91H77C62 91 56 84 56 75C56 64 64 57 77 57H104C116 38 137 29 164 29Z" id="path3"/>
+    <path d="M232 96C249 96 262 109 262 125C262 144 244 163 236 172C233 176 230 176 227 172C218 162 201 144 201 125C201 109 214 96 232 96ZM232 114C225 114 220 119 220 126C220 133 225 138 232 138C239 138 244 133 244 126C244 119 239 114 232 114Z" fill-rule="evenodd" id="path4"/>
+  </g>
+  </svg>
